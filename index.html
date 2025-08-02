@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Validation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 shadow-lg p-4 mb-5 bg-white rounded form-container">
+                <h2 class="text-center mb-4">🚀 User Registration</h2>
+
+                <div class="form-group position-relative">
+                    <input type="text" id="username" class="form-control" placeholder="Username">
+                    <small id="username_error"></small>
+                </div>
+
+                <div class="form-group position-relative">
+                    <input type="text" id="email" class="form-control" placeholder="Email (e.g., yourname@gmail.com)">
+                    <small id="email_error"></small>
+                </div>
+
+                <div class="form-group position-relative">
+                    <input type="password" id="password" class="form-control" placeholder="Password (min 8 chars incl. '.')">
+                    <small id="password_error"></small>
+                </div>
+
+                <div class="form-group position-relative">
+                    <input type="password" id="cpassword" class="form-control" placeholder="Confirm Password">
+                    <small id="cpassword_error"></small>
+                </div>
+
+                <button class="btn btn-primary w-100 mt-3" id="submit" onclick="validate()">SUBMIT</button>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
